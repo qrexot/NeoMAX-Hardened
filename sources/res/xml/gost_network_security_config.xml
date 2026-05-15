@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!--
+        Defense-in-depth: deny cleartext by default everywhere.
+        Carrier MobileID silent-auth probes used to be allowed as cleartext HTTP
+        for header enrichment; that path is now blocked.
+    -->
+    <base-config cleartextTrafficPermitted="false"/>
+
+    <!--
+        Hard-block known analytics/tracker hosts via cert pinning to a sentinel hash.
+        Any TLS handshake to these domains will fail pin validation and be aborted.
+    -->
+    <domain-config>
+        <domain includeSubdomains="true">mc.yandex.ru</domain>
+        <domain includeSubdomains="true">mc.yandex.com</domain>
+        <domain includeSubdomains="true">metrika.yandex.net</domain>
+        <domain includeSubdomains="true">appmetrica.yandex.ru</domain>
+        <domain includeSubdomains="true">appmetrica.yandex.net</domain>
+        <domain includeSubdomains="true">startup.mobile.yandex.net</domain>
+        <domain includeSubdomains="true">top-fwz1.mail.ru</domain>
+        <domain includeSubdomains="true">top.mail.ru</domain>
+        <domain includeSubdomains="true">trk.mail.ru</domain>
+        <domain includeSubdomains="true">tns-counter.ru</domain>
+        <domain includeSubdomains="true">app-measurement.com</domain>
+        <domain includeSubdomains="true">firebase-settings.crashlytics.com</domain>
+        <domain includeSubdomains="true">firebaseremoteconfig.googleapis.com</domain>
+        <domain includeSubdomains="true">firebaseinstallations.googleapis.com</domain>
+        <domain includeSubdomains="true">firebaselogging-pa.googleapis.com</domain>
+        <domain includeSubdomains="true">crashlyticsreports-pa.googleapis.com</domain>
+        <domain includeSubdomains="true">analytics.google.com</domain>
+        <domain includeSubdomains="true">google-analytics.com</domain>
+        <domain includeSubdomains="true">ssl.google-analytics.com</domain>
+        <domain includeSubdomains="true">tracking.my.com</domain>
+        <domain includeSubdomains="true">trk.mrgtag.net</domain>
+        <domain includeSubdomains="true">stat.mail.ru</domain>
+        <domain includeSubdomains="true">stat.my.com</domain>
+        <domain includeSubdomains="true">tracer.ok.ru</domain>
+        <domain includeSubdomains="true">api.tracer.ok.ru</domain>
+        <domain includeSubdomains="true">log.ok.ru</domain>
+        <domain includeSubdomains="true">push.mail.ru</domain>
+        <domain includeSubdomains="true">mobileid.megafon.ru</domain>
+        <domain includeSubdomains="true">idgw.mobileid.mts.ru</domain>
+        <domain includeSubdomains="true">hhe.mts.ru</domain>
+        <domain includeSubdomains="true">he-mc.tele2.ru</domain>
+        <domain includeSubdomains="true">he-mc.t2.ru</domain>
+        <domain includeSubdomains="true">balance.beeline.ru</domain>
+        <pin-set>
+            <!-- Sentinel pin: hash that will never match any real cert. TLS will always fail. -->
+            <pin digest="SHA-256">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</pin>
+        </pin-set>
+    </domain-config>
+</network-security-config>

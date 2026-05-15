@@ -1,0 +1,54 @@
+.class public final Lged;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroidx/media3/exoplayer/mediacodec/g;
+
+
+# instance fields
+.field public final c:Lgr7;
+
+
+# direct methods
+.method public constructor <init>(Lgr7;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lged;->c:Lgr7;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Ljava/lang/String;ZZ)Ljava/util/List;
+    .locals 1
+
+    iget-object v0, p0, Lged;->c:Lgr7;
+
+    invoke-interface {v0}, Lgr7;->invoke()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/util/List;
+
+    invoke-static {p1, p2, p3}, Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil;->l(Ljava/lang/String;ZZ)Ljava/util/List;
+
+    move-result-object p1
+
+    new-instance p2, Lged$a;
+
+    invoke-direct {p2, v0}, Lged$a;-><init>(Ljava/util/List;)V
+
+    invoke-static {p1, p2}, Lqn3;->Z0(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lqn3;->n1(Ljava/util/Collection;)Ljava/util/List;
+
+    move-result-object p1
+
+    return-object p1
+.end method

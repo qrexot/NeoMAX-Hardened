@@ -1,0 +1,11 @@
+.class public interface abstract Lw62;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# virtual methods
+.method public abstract a(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.end method
+
+.method public abstract b()V
+.end method

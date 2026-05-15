@@ -1,0 +1,48 @@
+.class public final Lb81$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lb81;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+
+# instance fields
+.field public final a:Ljava/util/Collection;
+
+.field public final b:Ljava/util/Collection;
+
+.field public final c:Lop1;
+
+
+# direct methods
+.method public constructor <init>(Ljava/util/Collection;Ljava/util/Collection;Lop1;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lb81$a;->a:Ljava/util/Collection;
+
+    iput-object p2, p0, Lb81$a;->b:Ljava/util/Collection;
+
+    iput-object p3, p0, Lb81$a;->c:Lop1;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Ljava/util/Collection;
+    .locals 1
+
+    iget-object v0, p0, Lb81$a;->a:Ljava/util/Collection;
+
+    return-object v0
+.end method

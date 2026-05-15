@@ -1,0 +1,67 @@
+.class public final synthetic Lvpi$f;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcs7;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lvpi;->u(Ljava/util/List;)Ln7i;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1019
+    name = null
+.end annotation
+
+
+# static fields
+.field public static final w:Lvpi$f;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lvpi$f;
+
+    invoke-direct {v0}, Lvpi$f;-><init>()V
+
+    sput-object v0, Lvpi$f;->w:Lvpi$f;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Laz;)Ljava/util/List;
+    .locals 0
+
+    invoke-virtual {p1}, Laz;->i()Ljava/util/List;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    check-cast p1, Laz;
+
+    invoke-virtual {p0, p1}, Lvpi$f;->a(Laz;)Ljava/util/List;
+
+    move-result-object p1
+
+    return-object p1
+.end method

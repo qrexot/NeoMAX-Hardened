@@ -1,0 +1,14 @@
+.class public abstract Lru/ok/messages/messages/popup/PopupOptionsAdapter$b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lru/ok/messages/messages/popup/PopupOptionsAdapter;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "b"
+.end annotation

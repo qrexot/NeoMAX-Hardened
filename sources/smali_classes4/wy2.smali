@@ -1,0 +1,48 @@
+.class public final synthetic Lwy2;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/view/View$OnLongClickListener;
+
+
+# instance fields
+.field public final synthetic w:Lwr7;
+
+.field public final synthetic x:Lsta;
+
+.field public final synthetic y:Lxy2;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lwr7;Lsta;Lxy2;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lwy2;->w:Lwr7;
+
+    iput-object p2, p0, Lwy2;->x:Lsta;
+
+    iput-object p3, p0, Lwy2;->y:Lxy2;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onLongClick(Landroid/view/View;)Z
+    .locals 3
+
+    iget-object v0, p0, Lwy2;->w:Lwr7;
+
+    iget-object v1, p0, Lwy2;->x:Lsta;
+
+    iget-object v2, p0, Lwy2;->y:Lxy2;
+
+    invoke-static {v0, v1, v2, p1}, Lxy2;->w(Lwr7;Lsta;Lxy2;Landroid/view/View;)Z
+
+    move-result p1
+
+    return p1
+.end method

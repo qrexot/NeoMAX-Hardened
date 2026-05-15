@@ -1,0 +1,128 @@
+.class public abstract Lhc6;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# direct methods
+.method public static a(Lcc6$c;Landroid/util/Size;Landroid/util/Range;)Lcc6$c;
+    .locals 19
+
+    invoke-virtual/range {p0 .. p0}, Lcc6$c;->c()I
+
+    move-result v0
+
+    invoke-virtual/range {p0 .. p0}, Lcc6$c;->b()I
+
+    move-result v1
+
+    invoke-virtual/range {p0 .. p0}, Lcc6$c;->b()I
+
+    move-result v2
+
+    invoke-virtual/range {p0 .. p0}, Lcc6$c;->f()I
+
+    move-result v3
+
+    invoke-virtual/range {p0 .. p0}, Lcc6$c;->f()I
+
+    move-result v4
+
+    invoke-virtual/range {p1 .. p1}, Landroid/util/Size;->getWidth()I
+
+    move-result v5
+
+    invoke-virtual/range {p0 .. p0}, Lcc6$c;->l()I
+
+    move-result v6
+
+    invoke-virtual/range {p1 .. p1}, Landroid/util/Size;->getHeight()I
+
+    move-result v7
+
+    invoke-virtual/range {p0 .. p0}, Lcc6$c;->h()I
+
+    move-result v8
+
+    move-object/from16 v9, p2
+
+    invoke-static/range {v0 .. v9}, Luwk;->f(IIIIIIIIILandroid/util/Range;)I
+
+    move-result v11
+
+    invoke-virtual/range {p0 .. p0}, Lcc6$c;->e()I
+
+    move-result v9
+
+    invoke-virtual/range {p0 .. p0}, Lcc6$c;->i()Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-virtual/range {p0 .. p0}, Lcc6$c;->f()I
+
+    move-result v12
+
+    invoke-virtual/range {p1 .. p1}, Landroid/util/Size;->getWidth()I
+
+    move-result v13
+
+    invoke-virtual/range {p1 .. p1}, Landroid/util/Size;->getHeight()I
+
+    move-result v14
+
+    invoke-virtual/range {p0 .. p0}, Lcc6$c;->j()I
+
+    move-result v15
+
+    invoke-virtual/range {p0 .. p0}, Lcc6$c;->b()I
+
+    move-result v16
+
+    invoke-virtual/range {p0 .. p0}, Lcc6$c;->d()I
+
+    move-result v17
+
+    invoke-virtual/range {p0 .. p0}, Lcc6$c;->g()I
+
+    move-result v18
+
+    invoke-static/range {v9 .. v18}, Lcc6$c;->a(ILjava/lang/String;IIIIIIII)Lcc6$c;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static b(Lcc6;)Lcc6$c;
+    .locals 1
+
+    if-eqz p0, :cond_0
+
+    invoke-interface {p0}, Lcc6;->e()Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    invoke-interface {p0}, Lcc6;->e()Ljava/util/List;
+
+    move-result-object p0
+
+    const/4 v0, 0x0
+
+    invoke-interface {p0, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lcc6$c;
+
+    return-object p0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return-object p0
+.end method

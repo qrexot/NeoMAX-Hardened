@@ -1,0 +1,82 @@
+.class public Lzkd;
+.super Lxm0;
+.source "SourceFile"
+
+
+# instance fields
+.field public final c:Landroid/net/Uri;
+
+
+# direct methods
+.method public constructor <init>(Landroid/net/Uri;)V
+    .locals 0
+
+    invoke-direct {p0}, Lxm0;-><init>()V
+
+    iput-object p1, p0, Lzkd;->c:Landroid/net/Uri;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public b()Lu41;
+    .locals 2
+
+    new-instance v0, Lc6i;
+
+    iget-object v1, p0, Lzkd;->c:Landroid/net/Uri;
+
+    invoke-virtual {v1}, Landroid/net/Uri;->hashCode()I
+
+    move-result v1
+
+    invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Lc6i;-><init>(Ljava/lang/String;)V
+
+    return-object v0
+.end method
+
+.method public d(Landroid/graphics/Bitmap;)V
+    .locals 3
+
+    iget-object v0, p0, Lzkd;->c:Landroid/net/Uri;
+
+    invoke-static {v0}, Lpj8;->b(Landroid/net/Uri;)Landroid/graphics/Bitmap;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    new-instance v1, Landroid/graphics/Canvas;
+
+    invoke-direct {v1, p1}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
+
+    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
+
+    move-result p1
+
+    int-to-float p1, p1
+
+    invoke-virtual {v0}, Landroid/graphics/Bitmap;->getWidth()I
+
+    move-result v2
+
+    int-to-float v2, v2
+
+    div-float/2addr p1, v2
+
+    invoke-virtual {v1, p1, p1}, Landroid/graphics/Canvas;->scale(FF)V
+
+    const/4 p1, 0x0
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v1, v0, v2, v2, p1}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V
+
+    :cond_0
+    return-void
+.end method

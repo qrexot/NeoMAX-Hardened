@@ -1,0 +1,195 @@
+.class public Lo8g$b;
+.super Lo8g;
+.source "SourceFile"
+
+# interfaces
+.implements Ljt4;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lo8g;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "b"
+.end annotation
+
+
+# instance fields
+.field public final i:Le3h$a;
+
+
+# direct methods
+.method public constructor <init>(JLcom/google/android/exoplayer2/s;Ljava/util/List;Le3h$a;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
+    .locals 10
+
+    const/4 v9, 0x0
+
+    move-object v0, p0
+
+    move-wide v1, p1
+
+    move-object v3, p3
+
+    move-object v4, p4
+
+    move-object v5, p5
+
+    move-object/from16 v6, p6
+
+    move-object/from16 v7, p7
+
+    move-object/from16 v8, p8
+
+    invoke-direct/range {v0 .. v9}, Lo8g;-><init>(JLcom/google/android/exoplayer2/s;Ljava/util/List;Le3h;Ljava/util/List;Ljava/util/List;Ljava/util/List;Lo8g$a;)V
+
+    iput-object p5, p0, Lo8g$b;->i:Le3h$a;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()Ljava/lang/String;
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public b(J)J
+    .locals 1
+
+    iget-object v0, p0, Lo8g$b;->i:Le3h$a;
+
+    invoke-virtual {v0, p1, p2}, Le3h$a;->j(J)J
+
+    move-result-wide p1
+
+    return-wide p1
+.end method
+
+.method public c(JJ)J
+    .locals 1
+
+    iget-object v0, p0, Lo8g$b;->i:Le3h$a;
+
+    invoke-virtual {v0, p1, p2, p3, p4}, Le3h$a;->h(JJ)J
+
+    move-result-wide p1
+
+    return-wide p1
+.end method
+
+.method public d(JJ)J
+    .locals 1
+
+    iget-object v0, p0, Lo8g$b;->i:Le3h$a;
+
+    invoke-virtual {v0, p1, p2, p3, p4}, Le3h$a;->d(JJ)J
+
+    move-result-wide p1
+
+    return-wide p1
+.end method
+
+.method public e(JJ)J
+    .locals 1
+
+    iget-object v0, p0, Lo8g$b;->i:Le3h$a;
+
+    invoke-virtual {v0, p1, p2, p3, p4}, Le3h$a;->f(JJ)J
+
+    move-result-wide p1
+
+    return-wide p1
+.end method
+
+.method public f(JJ)J
+    .locals 1
+
+    iget-object v0, p0, Lo8g$b;->i:Le3h$a;
+
+    invoke-virtual {v0, p1, p2, p3, p4}, Le3h$a;->i(JJ)J
+
+    move-result-wide p1
+
+    return-wide p1
+.end method
+
+.method public g(J)J
+    .locals 1
+
+    iget-object v0, p0, Lo8g$b;->i:Le3h$a;
+
+    invoke-virtual {v0, p1, p2}, Le3h$a;->g(J)J
+
+    move-result-wide p1
+
+    return-wide p1
+.end method
+
+.method public h()J
+    .locals 2
+
+    iget-object v0, p0, Lo8g$b;->i:Le3h$a;
+
+    invoke-virtual {v0}, Le3h$a;->e()J
+
+    move-result-wide v0
+
+    return-wide v0
+.end method
+
+.method public i(J)Lfqf;
+    .locals 1
+
+    iget-object v0, p0, Lo8g$b;->i:Le3h$a;
+
+    invoke-virtual {v0, p0, p1, p2}, Le3h$a;->k(Lo8g;J)Lfqf;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public j()Z
+    .locals 1
+
+    iget-object v0, p0, Lo8g$b;->i:Le3h$a;
+
+    invoke-virtual {v0}, Le3h$a;->l()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public k(JJ)J
+    .locals 1
+
+    iget-object v0, p0, Lo8g$b;->i:Le3h$a;
+
+    invoke-virtual {v0, p1, p2, p3, p4}, Le3h$a;->c(JJ)J
+
+    move-result-wide p1
+
+    return-wide p1
+.end method
+
+.method public l()Ljt4;
+    .locals 0
+
+    return-object p0
+.end method
+
+.method public m()Lfqf;
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
