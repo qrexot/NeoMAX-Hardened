@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/$voice_to_trash__0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <target android:name="_R_G_L_1_C_0" android:animation="@drawable/$voice_to_trash__1" />
+    <target android:name="_R_G_L_1_C_1" android:animation="@drawable/$voice_to_trash__2" />
+    <target android:name="_R_G_L_1_G" android:animation="@drawable/$voice_to_trash__3" />
+    <target android:name="_R_G_L_0_C_0" android:animation="@drawable/$voice_to_trash__4" />
+    <target android:name="_R_G_L_0_G" android:animation="@drawable/$voice_to_trash__5" />
+    <target android:name="time_group" android:animation="@drawable/$voice_to_trash__6" />
+</animated-vector>

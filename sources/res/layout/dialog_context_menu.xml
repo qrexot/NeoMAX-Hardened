@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/dialog_context_menu__root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/grabber_view" android:layout_width="32.0dip" android:layout_height="3.0dip" android:layout_marginTop="6.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:alpha="0.5" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/dialog_context_menu__actions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/grabber_view" />
+</RelativeLayout>

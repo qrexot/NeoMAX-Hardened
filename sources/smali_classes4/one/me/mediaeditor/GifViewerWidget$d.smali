@@ -1,0 +1,270 @@
+.class public final Lone/me/mediaeditor/GifViewerWidget$d;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lone/me/sdk/media/player/view/VideoView$b;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lone/me/mediaeditor/GifViewerWidget;-><init>(Landroid/os/Bundle;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic a:Lone/me/mediaeditor/GifViewerWidget;
+
+
+# direct methods
+.method public constructor <init>(Lone/me/mediaeditor/GifViewerWidget;)V
+    .locals 0
+
+    iput-object p1, p0, Lone/me/mediaeditor/GifViewerWidget$d;->a:Lone/me/mediaeditor/GifViewerWidget;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()Ldqg;
+    .locals 1
+
+    iget-object v0, p0, Lone/me/mediaeditor/GifViewerWidget$d;->a:Lone/me/mediaeditor/GifViewerWidget;
+
+    invoke-static {v0}, Lone/me/mediaeditor/GifViewerWidget;->E3(Lone/me/mediaeditor/GifViewerWidget;)Lvwk;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
+
+    invoke-interface {v0}, Lvwk;->a()Ldqg;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    return-object v0
+
+    :cond_1
+    :goto_0
+    sget-object v0, Ldqg;->FIT_CENTER:Ldqg;
+
+    return-object v0
+.end method
+
+.method public b(Landroid/view/Surface;Lone/me/sdk/media/player/view/VideoDebugView;)V
+    .locals 8
+
+    iget-object v0, p0, Lone/me/mediaeditor/GifViewerWidget$d;->a:Lone/me/mediaeditor/GifViewerWidget;
+
+    invoke-static {v0}, Lone/me/mediaeditor/GifViewerWidget;->D3(Lone/me/mediaeditor/GifViewerWidget;)Ljava/lang/String;
+
+    move-result-object v3
+
+    sget-object v0, Lzl9;->a:Lzl9;
+
+    invoke-virtual {v0}, Lzl9;->k()Lpd8;
+
+    move-result-object v1
+
+    if-nez v1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    sget-object v2, Ljm9;->DEBUG:Ljm9;
+
+    invoke-interface {v1, v2}, Lpd8;->b(Ljm9;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "Media editor. Gif viewer, set surface "
+
+    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    const/16 v6, 0x8
+
+    const/4 v7, 0x0
+
+    const/4 v5, 0x0
+
+    invoke-static/range {v1 .. v7}, Lpd8;->f(Lpd8;Ljm9;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;ILjava/lang/Object;)V
+
+    :cond_1
+    :goto_0
+    iget-object v0, p0, Lone/me/mediaeditor/GifViewerWidget$d;->a:Lone/me/mediaeditor/GifViewerWidget;
+
+    invoke-static {v0}, Lone/me/mediaeditor/GifViewerWidget;->F3(Lone/me/mediaeditor/GifViewerWidget;)Lone/me/sdk/media/player/f;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_2
+
+    invoke-interface {v0, p1}, Lone/me/sdk/media/player/f;->setSurface(Landroid/view/Surface;)V
+
+    invoke-interface {v0, p2}, Lone/me/sdk/media/player/f;->setDebugView(Lone/me/sdk/media/player/view/VideoDebugView;)V
+
+    :cond_2
+    return-void
+.end method
+
+.method public d()I
+    .locals 1
+
+    iget-object v0, p0, Lone/me/mediaeditor/GifViewerWidget$d;->a:Lone/me/mediaeditor/GifViewerWidget;
+
+    invoke-static {v0}, Lone/me/mediaeditor/GifViewerWidget;->E3(Lone/me/mediaeditor/GifViewerWidget;)Lvwk;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {v0}, Lvwk;->getHeight()I
+
+    move-result v0
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public h()I
+    .locals 1
+
+    iget-object v0, p0, Lone/me/mediaeditor/GifViewerWidget$d;->a:Lone/me/mediaeditor/GifViewerWidget;
+
+    invoke-static {v0}, Lone/me/mediaeditor/GifViewerWidget;->E3(Lone/me/mediaeditor/GifViewerWidget;)Lvwk;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {v0}, Lvwk;->getWidth()I
+
+    move-result v0
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public isDebugEnabled()Z
+    .locals 1
+
+    iget-object v0, p0, Lone/me/mediaeditor/GifViewerWidget$d;->a:Lone/me/mediaeditor/GifViewerWidget;
+
+    invoke-static {v0}, Lone/me/mediaeditor/GifViewerWidget;->z3(Lone/me/mediaeditor/GifViewerWidget;)Lek3;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Lek3;->O5()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lone/me/mediaeditor/GifViewerWidget$d;->a:Lone/me/mediaeditor/GifViewerWidget;
+
+    invoke-static {v0}, Lone/me/mediaeditor/GifViewerWidget;->B3(Lone/me/mediaeditor/GifViewerWidget;)Lzw6;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Lzw6;->L5()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public onSurfaceTextureDestroyed(Landroid/graphics/SurfaceTexture;)V
+    .locals 8
+
+    iget-object v0, p0, Lone/me/mediaeditor/GifViewerWidget$d;->a:Lone/me/mediaeditor/GifViewerWidget;
+
+    invoke-static {v0}, Lone/me/mediaeditor/GifViewerWidget;->D3(Lone/me/mediaeditor/GifViewerWidget;)Ljava/lang/String;
+
+    move-result-object v3
+
+    sget-object v0, Lzl9;->a:Lzl9;
+
+    invoke-virtual {v0}, Lzl9;->k()Lpd8;
+
+    move-result-object v1
+
+    if-nez v1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    sget-object v2, Ljm9;->DEBUG:Ljm9;
+
+    invoke-interface {v1, v2}, Lpd8;->b(Ljm9;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "Media editor. Gif viewer, surface destroyed "
+
+    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    const/16 v6, 0x8
+
+    const/4 v7, 0x0
+
+    const/4 v5, 0x0
+
+    invoke-static/range {v1 .. v7}, Lpd8;->f(Lpd8;Ljm9;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;ILjava/lang/Object;)V
+
+    :cond_1
+    :goto_0
+    return-void
+.end method

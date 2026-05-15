@@ -1,0 +1,164 @@
+.class public final Lone/me/chatmedia/viewer/ChatMediaViewerScreen$updatePanelsVisibility$lambda$1$$inlined$doOnEnd$1;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/animation/Animator$AnimatorListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lone/me/chatmedia/viewer/ChatMediaViewerScreen;->x5(ZZ)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0017\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0007*\u0001\u0000\u0008\n\u0018\u00002\u00020\u0001J\u0017\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0016\u00a2\u0006\u0004\u0008\u0005\u0010\u0006J\u0017\u0010\u0007\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0016\u00a2\u0006\u0004\u0008\u0007\u0010\u0006J\u0017\u0010\u0008\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0016\u00a2\u0006\u0004\u0008\u0008\u0010\u0006J\u0017\u0010\t\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H\u0016\u00a2\u0006\u0004\u0008\t\u0010\u0006\u00a8\u0006\u000b\u00b8\u0006\n"
+    }
+    d2 = {
+        "androidx/core/animation/AnimatorKt$addListener$listener$1",
+        "Landroid/animation/Animator$AnimatorListener;",
+        "Landroid/animation/Animator;",
+        "animator",
+        "Lahk;",
+        "onAnimationRepeat",
+        "(Landroid/animation/Animator;)V",
+        "onAnimationEnd",
+        "onAnimationCancel",
+        "onAnimationStart",
+        "androidx/core/animation/AnimatorKt$doOnEnd$$inlined$addListener$default$1",
+        "core-ktx_release"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x2,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field final synthetic $endAlpha$inlined:F
+
+.field final synthetic $forVideo$inlined:Z
+
+.field final synthetic this$0:Lone/me/chatmedia/viewer/ChatMediaViewerScreen;
+
+
+# direct methods
+.method public constructor <init>(FLone/me/chatmedia/viewer/ChatMediaViewerScreen;Z)V
+    .locals 0
+
+    iput p1, p0, Lone/me/chatmedia/viewer/ChatMediaViewerScreen$updatePanelsVisibility$lambda$1$$inlined$doOnEnd$1;->$endAlpha$inlined:F
+
+    iput-object p2, p0, Lone/me/chatmedia/viewer/ChatMediaViewerScreen$updatePanelsVisibility$lambda$1$$inlined$doOnEnd$1;->this$0:Lone/me/chatmedia/viewer/ChatMediaViewerScreen;
+
+    iput-boolean p3, p0, Lone/me/chatmedia/viewer/ChatMediaViewerScreen$updatePanelsVisibility$lambda$1$$inlined$doOnEnd$1;->$forVideo$inlined:Z
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onAnimationCancel(Landroid/animation/Animator;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public onAnimationEnd(Landroid/animation/Animator;)V
+    .locals 1
+
+    iget p1, p0, Lone/me/chatmedia/viewer/ChatMediaViewerScreen$updatePanelsVisibility$lambda$1$$inlined$doOnEnd$1;->$endAlpha$inlined:F
+
+    const/4 v0, 0x0
+
+    cmpg-float p1, p1, v0
+
+    if-nez p1, :cond_3
+
+    iget-object p1, p0, Lone/me/chatmedia/viewer/ChatMediaViewerScreen$updatePanelsVisibility$lambda$1$$inlined$doOnEnd$1;->this$0:Lone/me/chatmedia/viewer/ChatMediaViewerScreen;
+
+    invoke-static {p1}, Lone/me/chatmedia/viewer/ChatMediaViewerScreen;->F4(Lone/me/chatmedia/viewer/ChatMediaViewerScreen;)Lone/me/sdk/uikit/common/toolbar/OneMeToolbar;
+
+    move-result-object p1
+
+    const/16 v0, 0x8
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
+
+    iget-object p1, p0, Lone/me/chatmedia/viewer/ChatMediaViewerScreen$updatePanelsVisibility$lambda$1$$inlined$doOnEnd$1;->this$0:Lone/me/chatmedia/viewer/ChatMediaViewerScreen;
+
+    invoke-static {p1}, Lone/me/chatmedia/viewer/ChatMediaViewerScreen;->D4(Lone/me/chatmedia/viewer/ChatMediaViewerScreen;)Lone/me/chatmedia/viewer/InformationPanelView;
+
+    move-result-object p1
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
+
+    iget-object p1, p0, Lone/me/chatmedia/viewer/ChatMediaViewerScreen$updatePanelsVisibility$lambda$1$$inlined$doOnEnd$1;->this$0:Lone/me/chatmedia/viewer/ChatMediaViewerScreen;
+
+    invoke-static {p1}, Lone/me/chatmedia/viewer/ChatMediaViewerScreen;->B4(Lone/me/chatmedia/viewer/ChatMediaViewerScreen;)Lone/me/chatmedia/viewer/caption/CaptionPopupView;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
+
+    :cond_0
+    iget-boolean p1, p0, Lone/me/chatmedia/viewer/ChatMediaViewerScreen$updatePanelsVisibility$lambda$1$$inlined$doOnEnd$1;->$forVideo$inlined:Z
+
+    const/4 v0, 0x0
+
+    if-eqz p1, :cond_1
+
+    iget-object p1, p0, Lone/me/chatmedia/viewer/ChatMediaViewerScreen$updatePanelsVisibility$lambda$1$$inlined$doOnEnd$1;->this$0:Lone/me/chatmedia/viewer/ChatMediaViewerScreen;
+
+    invoke-virtual {p1}, Lone/me/chatmedia/viewer/BaseMediaViewerScreen;->T3()Lone/me/chatmedia/viewer/d;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p1, v0}, Lone/me/chatmedia/viewer/d;->u(Z)V
+
+    :cond_1
+    iget-object p1, p0, Lone/me/chatmedia/viewer/ChatMediaViewerScreen$updatePanelsVisibility$lambda$1$$inlined$doOnEnd$1;->this$0:Lone/me/chatmedia/viewer/ChatMediaViewerScreen;
+
+    invoke-static {p1}, Lone/me/chatmedia/viewer/ChatMediaViewerScreen;->C4(Lone/me/chatmedia/viewer/ChatMediaViewerScreen;)Lcr7;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_2
+
+    invoke-virtual {p1, v0}, Lcr7;->p(Z)V
+
+    :cond_2
+    iget-object p1, p0, Lone/me/chatmedia/viewer/ChatMediaViewerScreen$updatePanelsVisibility$lambda$1$$inlined$doOnEnd$1;->this$0:Lone/me/chatmedia/viewer/ChatMediaViewerScreen;
+
+    invoke-static {p1, v0}, Lone/me/chatmedia/viewer/ChatMediaViewerScreen;->A4(Lone/me/chatmedia/viewer/ChatMediaViewerScreen;Z)V
+
+    :cond_3
+    return-void
+.end method
+
+.method public onAnimationRepeat(Landroid/animation/Animator;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public onAnimationStart(Landroid/animation/Animator;)V
+    .locals 0
+
+    return-void
+.end method

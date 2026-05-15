@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/music_player_control_thumb_bg" android:top="10.0dip" android:bottom="10.0dip">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+    <item android:id="@id/music_player_control_thumb_circle" android:left="2.0dip" android:top="2.0dip" android:right="2.0dip" android:bottom="2.0dip">
+        <shape android:shape="oval">
+            <size android:height="20.0dip" android:width="20.0dip" />
+            <solid android:color="@color/white" />
+            <stroke android:width="2.0dip" android:color="@color/music_player_primary" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,25 @@
+.class public interface abstract Lbq5$b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lbq5;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "b"
+.end annotation
+
+
+# virtual methods
+.method public abstract u()Z
+.end method
+
+.method public abstract v(Ljava/lang/Object;)Lrr0;
+.end method
+
+.method public abstract w(Lgxl;Ljava/lang/Object;)V
+.end method

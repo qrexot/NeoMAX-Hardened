@@ -1,0 +1,150 @@
+.class public final Lltf$c;
+.super Lm9j;
+.source "SourceFile"
+
+# interfaces
+.implements Lwr7;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lltf;-><init>(JLz99;Lce3;Lqch;La21;Lfsf;Landroid/content/Context;Lz99;Lz99;Lz99;Lz99;Lz99;Lz99;Lz99;Lz99;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+
+# instance fields
+.field public A:I
+
+.field public synthetic B:Ljava/lang/Object;
+
+.field public final synthetic C:Lltf;
+
+
+# direct methods
+.method public constructor <init>(Lltf;Lkotlin/coroutines/Continuation;)V
+    .locals 0
+
+    iput-object p1, p0, Lltf$c;->C:Lltf;
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1, p2}, Lm9j;-><init>(ILkotlin/coroutines/Continuation;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final b(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+    .locals 2
+
+    new-instance v0, Lltf$c;
+
+    iget-object v1, p0, Lltf$c;->C:Lltf;
+
+    invoke-direct {v0, v1, p2}, Lltf$c;-><init>(Lltf;Lkotlin/coroutines/Continuation;)V
+
+    iput-object p1, v0, Lltf$c;->B:Ljava/lang/Object;
+
+    return-object v0
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    check-cast p1, Loo2;
+
+    check-cast p2, Lkotlin/coroutines/Continuation;
+
+    invoke-virtual {p0, p1, p2}, Lltf$c;->t(Loo2;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final m(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
+
+    iget-object v0, p0, Lltf$c;->B:Ljava/lang/Object;
+
+    check-cast v0, Loo2;
+
+    invoke-static {}, Lmv8;->f()Ljava/lang/Object;
+
+    iget v1, p0, Lltf$c;->A:I
+
+    if-nez v1, :cond_1
+
+    invoke-static {p1}, Lebg;->b(Ljava/lang/Object;)V
+
+    iget-object p1, p0, Lltf$c;->C:Lltf;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, v0, Loo2;->x:Lys2;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Lys2;->i()Lys2$h;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Lys2$h;->c()J
+
+    move-result-wide v0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/16 v0, 0x0
+
+    :goto_0
+    invoke-virtual {p1, v0, v1}, Lltf;->l1(J)V
+
+    iget-object p1, p0, Lltf$c;->C:Lltf;
+
+    invoke-static {p1}, Lltf;->G0(Lltf;)Lq9g;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Lq9g;->reset()V
+
+    sget-object p1, Lahk;->a:Lahk;
+
+    return-object p1
+
+    :cond_1
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+.method public final t(Loo2;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    .locals 0
+
+    invoke-virtual {p0, p1, p2}, Lltf$c;->b(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+
+    move-result-object p1
+
+    check-cast p1, Lltf$c;
+
+    sget-object p2, Lahk;->a:Lahk;
+
+    invoke-virtual {p1, p2}, Lltf$c;->m(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method

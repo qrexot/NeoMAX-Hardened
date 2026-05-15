@@ -1,0 +1,65 @@
+.class public final Lone/me/calllist/ui/page/CallHistoryPageScreen$e;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lone/me/sdk/lists/widgets/EndlessRecyclerView$f;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lone/me/calllist/ui/page/CallHistoryPageScreen;->Q3(Lone/me/sdk/lists/widgets/EndlessRecyclerView2;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic w:Lone/me/calllist/ui/page/CallHistoryPageScreen;
+
+
+# direct methods
+.method public constructor <init>(Lone/me/calllist/ui/page/CallHistoryPageScreen;)V
+    .locals 0
+
+    iput-object p1, p0, Lone/me/calllist/ui/page/CallHistoryPageScreen$e;->w:Lone/me/calllist/ui/page/CallHistoryPageScreen;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public m()V
+    .locals 1
+
+    iget-object v0, p0, Lone/me/calllist/ui/page/CallHistoryPageScreen$e;->w:Lone/me/calllist/ui/page/CallHistoryPageScreen;
+
+    invoke-static {v0}, Lone/me/calllist/ui/page/CallHistoryPageScreen;->y3(Lone/me/calllist/ui/page/CallHistoryPageScreen;)Lzg1;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lzg1;->P0()V
+
+    return-void
+.end method
+
+.method public p0()Z
+    .locals 1
+
+    iget-object v0, p0, Lone/me/calllist/ui/page/CallHistoryPageScreen$e;->w:Lone/me/calllist/ui/page/CallHistoryPageScreen;
+
+    invoke-static {v0}, Lone/me/calllist/ui/page/CallHistoryPageScreen;->y3(Lone/me/calllist/ui/page/CallHistoryPageScreen;)Lzg1;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lzg1;->J0()Z
+
+    move-result v0
+
+    return v0
+.end method

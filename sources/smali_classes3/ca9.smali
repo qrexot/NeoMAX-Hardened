@@ -1,0 +1,37 @@
+.class public final Lca9;
+.super Lfh5;
+.source "SourceFile"
+
+
+# instance fields
+.field public final w:Lkotlin/coroutines/Continuation;
+
+
+# direct methods
+.method public constructor <init>(Lmm4;Lwr7;)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    invoke-direct {p0, p1, v0}, Lfh5;-><init>(Lmm4;Z)V
+
+    invoke-static {p2, p0, p0}, Llv8;->a(Lwr7;Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lca9;->w:Lkotlin/coroutines/Continuation;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onStart()V
+    .locals 1
+
+    iget-object v0, p0, Lca9;->w:Lkotlin/coroutines/Continuation;
+
+    invoke-static {v0, p0}, Lug2;->c(Lkotlin/coroutines/Continuation;Lkotlin/coroutines/Continuation;)V
+
+    return-void
+.end method

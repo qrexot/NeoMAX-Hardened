@@ -1,0 +1,77 @@
+.class public interface abstract Lu1h;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lone/me/sdk/sections/SettingsItem;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lu1h$a;,
+        Lu1h$b;,
+        Lu1h$c;
+    }
+.end annotation
+
+
+# virtual methods
+.method public a()Lone/me/sdk/uikit/common/TextSource;
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public abstract b()Lh2h$b;
+.end method
+
+.method public c()Lone/me/sdk/sections/SettingsItem$b;
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public d()Lone/me/sdk/uikit/common/TextSource;
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public e()Lone/me/sdk/sections/SettingsItem$EndViewType;
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public f()Lqa9;
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public g()Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public getType()Lone/me/sdk/sections/SettingsItem$d;
+    .locals 1
+
+    sget-object v0, Lone/me/sdk/sections/SettingsItem$d;->SIMPLE:Lone/me/sdk/sections/SettingsItem$d;
+
+    return-object v0
+.end method
